@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="Registration"><h1>Registration Form </h1></div>
+        <form id="registrationForm">
+            <div class="container2">
+                <div class="inputbox">
+                    <span class="inputtext">First Name: </span>
+                    <input type="text" name="firstName" placeholder="First name">
+                </div>
+                <div class="inputbox">
+                    <span class="inputtext">Middle Name: </span>
+                    <input type="text" name="middleName" placeholder="Middle Name">
+                </div>
+                 <div class="inputbox">
+                    <span class="inputtext">Last Name: </span>
+                    <input type="text" placeholder="Last name">
+                </div>
+                <div class="inputbox">
+                    <span class="inputtext">Email: </span>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="inputbox">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                </div>
+                <div class="inputbox">
+                    <span class="inputtext">Address: </span>
+                    <input type="text" placeholder="Address">
+                </div>
+                <div class="inputbox">
+                    <span class="inputtext" placeholder="Select Country">Country: </span>
+                    <select>
+                        <option disabled selected value="">Select Country</option>
+                        <option value="option1">India</option>
+                        <option value="option2">United States</option>
+                        <option value="option1">Japan</option>
+                        <option value="option2">Canada</option>
+
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <span class="inputtext">Gender: </span>
+                    <label>
+                        <input type="radio" name="gender" value="Male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Female"> Female
+                    </label>
+                </div>
+                <div class="inputbox">
+                    <span class="inputtext">UserName: </span>
+                    <input type="text" placeholder="UserName">
+                </div>
+                <div class="inputbox">
+                    <span class="inputtext">Password: </span>
+                    <input type="text" placeholder="Password">
+                </div>
+                <input class="lastinput" type="submit" value="Register your Data">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
